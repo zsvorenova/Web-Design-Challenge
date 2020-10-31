@@ -46,46 +46,40 @@
     <div class="container">
         
         <div class="row">
-            <div class="col-md-8">
-                <h1>HERE WILL BE COMPARISON</h1>
-                <img alt="latitude vs temperature" src="../assets/latitude_temperature.png" class="img-fluid float-left"
-                style="width:300px;height:auto;">
-                <p>some picture and text here balalsladadlsfkfndjngjdngv,nbb,cn</p>
+            <div class="col-md-12">
+                <h1>Comparison: Latitude vs X</h1>
+                <p>Click any plot to get an in-depth analysis.</p>
             </div>
-            <!-- should we use div or aside??? -->
-            <aside class="col-md-4 aside">
-                <h2>Visualizations</h2>
-                <div class="row">
-                    <div class="col-6">
-                        <a href="temperature.html">
-                            <img src="../assets/latitude_temperature.png" alt="latitude vs temperature" style="width:150px;height:auto">
-                        </a>
-                        <a href="humidity.html">
-                            <img src="../assets/latitude_humidity.png" alt="latitude vs humidity" style="width:150px;height:auto">
-                        </a>
-                    </div>
-                    <!-- <div class="col-6">
-                        <a href="visualizations/humidity.html">
-                            <img src="assets/latitude_humidity.png" alt="latitude vs humidity" style="width:70%;height:auto">
-                        </a>
-                    </div> -->
-
-                    <!-- Force next columns to break to new line -->
-                    <div class="w-100"></div>
-
-                    <div class="col-6">
-                        <a href="clouds.html">
-                            <img src="../assets/latitude_cloudiness.png" alt="latitude vs cloudiness" style="width:150px;height:auto">
-                        </a>
-                    </div>
-                    <div class="col-6">
-                        <a href="wind.html">
-                            <img src="../assets/latitude_windspeed.png" alt="latitude vs windspeed" style="width:150px;height:auto">
-                        </a>
-                    </div>
-                </div>
-            <aside>
         </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Max Temperature</h3>
+                <a href="../visualizations/temperature.html">
+                    <img src="../assets/latitude_temperature.png" alt="latitude vs temperature" class="img-fluid">
+                </a>
+            </div>
+            <div class="col-md-6">
+                <h3>Humidity</h3>
+                <a href="../visualizations/humidity.html">
+                    <img src="../assets/latitude_humidity.png" alt="latitude vs humidity" class="img-fluid">
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Cloudiness</h3>
+                <a href="../visualizations/clouds.html">
+                    <img src="../assets/latitude_cloudiness.png" alt="latitude vs cloudiness" class="img-fluid">
+                </a>
+            </div>
+            <div class="col-md-6">
+                <h3>Wind Speed</h3>
+                <a href="../visualizations/wind.html">
+                    <img src="../assets/latitude_windspeed.png" alt="latitude vs windspeed" class="img-fluid">
+                </a>
+            </div>
+        </div>
+    </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
