@@ -17,77 +17,88 @@
 <body>
     <!-- navbar at the top of the page -->
     <nav class="navbar navbar-expand-md navbar-light bg-light">
-        <a class="navbar-brand" href="../index.html">Latitude</a> 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <a class="navbar-brand" href="../index.html">
+            Latitude
+        </a>
+        <div id="navbarNavDropdown" class="collapse navbar-collapse">
             <ul class="navbar-nav ml-md-auto">
                 <li class="nav-item dropdown active">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Plots</a>
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="temperature.html">Max Temperature</a>
-                        <a class="dropdown-item" href="humidity.html">Humidity</a>
-                        <a class="dropdown-item" href="clouds.html">Cloudiness</a>
-                        <a class="dropdown-item" href="wind.html">Wind Speed</a>
+                    <a id="navbarDropdownMenuLink" class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                        Plots
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="temperature.html">
+                            Max Temperature
+                        </a>
+                        <a class="dropdown-item" href="humidity.html">
+                            Humidity
+                        </a>
+                        <a class="dropdown-item" href="clouds.html">
+                            Cloudiness
+                        </a>
+                        <a class="dropdown-item" href="wind.html">
+                            Wind Speed
+                        </a>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="comparison.html">Comparison</a>
+                    <a class="nav-link" href="comparison.html">
+                        Comparison
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="data.html">Data</a>
+                    <a class="nav-link" href="data.html">
+                        Data
+                    </a>
                 </li>
             </ul>
         </div>
     </nav>
-
+    <!-- content -->
     <div class="container">
-        <br>
-        
+        <br />
         <div class="row">
             <div class="col-md-7">
-                <h1>Max Temperature</h1>
-                <img alt="latitude vs temperature" src="../assets/latitude_temperature.png" class="img-fluid">
-                <p>The scatter plot shows the relationship between latitude and the maximum temperature. 
-                    As we can expect, there is a significant relationship between the distance from equator (latitude = 0) and the temperature. 
-                    Further from the equator we are lower the temperature is. This relationship seems to be stronger for northern hemisphere than for the southern one.</p>
+                <h1>
+                    Max Temperature
+                </h1>
+                <img class="img-fluid" src="../assets/latitude_temperature.png" alt="latitude vs temperature" />
+                <p>
+                    The scatter plot shows the relationship between latitude and the maximum temperature. As we can expect, there is a significant relationship between the distance from equator (latitude = 0) and the temperature. Further from the equator we are lower the temperature is. This relationship seems to be stronger for northern hemisphere than for the southern one.
+                </p>
             </div>
-            <!-- should we use div or aside??? -->
             <aside class="col-md-5 aside">
-                <br>
-                <h2>Visualizations</h2>
-                <br>
+                <br />
+                <h2>
+                    Visualizations
+                </h2>
+                <br />
                 <div class="row">
                     <div class="col-sm-3 col-md-6">
                         <a href="../visualizations/temperature.html">
-                            <img src="../assets/latitude_temperature.png" alt="latitude vs temperature" style="width:200px;height:auto" 
-                            class="img-fluid float-left img-thumbnail img-vis">
+                            <img class="img-fluid float-left img-thumbnail img-vis" style="width: 200px; height: auto;" src="../assets/latitude_temperature.png" alt="latitude vs temperature" />
                         </a>
                     </div>
                     <div class="col-sm-3 col-md-6">
                         <a href="../visualizations/humidity.html">
-                            <img src="../assets/latitude_humidity.png" alt="latitude vs humidity" style="width:200px;height:auto"
-                            class="img-fluid float-right img-vis">
+                            <img class="img-fluid float-right img-vis" style="width: 200px; height: auto;" src="../assets/latitude_humidity.png" alt="latitude vs humidity" />
                         </a>
                     </div>
                     <div class="col-sm-3 col-md-6">
                         <a href="../visualizations/clouds.html">
-                            <img src="../assets/latitude_cloudiness.png" alt="latitude vs cloudiness" style="width:200px;height:auto"
-                            class="img-fluid float-left img-vis">
+                            <img class="img-fluid float-left img-vis" style="width: 200px; height: auto;" src="../assets/latitude_cloudiness.png" alt="latitude vs cloudiness" />
                         </a>
                     </div>
                     <div class="col-sm-3 col-md-6">
                         <a href="../visualizations/wind.html">
-                            <img src="../assets/latitude_windspeed.png" alt="latitude vs windspeed" style="width:200px;height:auto"
-                            class="img-fluid float-right img-vis">
+                            <img class="img-fluid float-right img-vis" style="width: 200px; height: auto;" src="../assets/latitude_windspeed.png" alt="latitude vs windspeed" />
                         </a>
                     </div>
                 </div>
-            <aside>
+            </aside>
         </div>
     </div>
+
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

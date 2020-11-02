@@ -15,99 +15,96 @@
 </head>
 
 <body>
-    <!-- navbar at the top of the page -->
     <nav class="navbar navbar-expand-md navbar-light bg-light">
-        <a class="navbar-brand" href="index.html">Latitude</a> 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <a class="navbar-brand" href="index.html">
+             Latitude
+        </a>
+        <div id="navbarNavDropdown" class="collapse navbar-collapse">
             <ul class="navbar-nav ml-md-auto">
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Plots</a>
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="visualizations/temperature.html">Max Temperature</a>
-                        <a class="dropdown-item" href="visualizations/humidity.html">Humidity</a>
-                        <a class="dropdown-item" href="visualizations/clouds.html">Cloudiness</a>
-                        <a class="dropdown-item" href="visualizations/wind.html">Wind Speed</a>
+                    <a id="navbarDropdownMenuLink" class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                         Plots
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="visualizations/temperature.html">
+                             Max Temperature
+                        </a>
+                        <a class="dropdown-item" href="visualizations/humidity.html">
+                             Humidity
+                        </a>
+                        <a class="dropdown-item" href="visualizations/clouds.html">
+                             Cloudiness
+                        </a>
+                        <a class="dropdown-item" href="visualizations/wind.html">
+                             Wind Speed
+                        </a>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="visualizations/comparison.html">Comparison</a>
+                    <a class="nav-link" href="visualizations/comparison.html">
+                         Comparison
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="visualizations/data.html">Data</a>
+                    <a class="nav-link" href="visualizations/data.html">
+                         Data
+                    </a>
                 </li>
             </ul>
         </div>
     </nav>
-
+    <!-- content -->
     <div class="container">
-        <br>
-
+        <br />
         <div class="row">
             <div class="col-md-7">
-                <h1>Summary: Latitude vs. X</h1>
-                <br>
-                <img alt="latitude vs temperature" src="assets/latitude_temperature.png" class="img-fluid float-left img-summary"
-                style="width:300px;height:auto;">
-               <br><br>
-                <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis,
-                    we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.
-                </p><br>
-                <p>After assembling the dataset, we used Matplotlib to plot various aspects of weather vs. latitude.
-                    Factors we looked at included: temperature, cloudiness, humidity, and wind speed. The site provides the source
-                    data and visualizations created as part of the data analysis, as well as explanations and descriptions 
-                    of any trends and correlations witnessed.
+                <h1>
+                    Summary: Latitude vs. X
+                </h1>
+                <br />
+                <img class="img-fluid float-left img-summary" style="width: 300px; height: auto;" src="assets/latitude_temperature.png" alt="latitude vs temperature" />
+                <br />
+                <br />
+                <p>
+                    The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.
+                </p>
+                <br />
+                <p>
+                    After assembling the dataset, we used Matplotlib to plot various aspects of weather vs. latitude. Factors we looked at included: temperature, cloudiness, humidity, and wind speed. The site provides the source data and visualizations created as part of the data analysis, as well as explanations and descriptions of any trends and correlations witnessed.
                 </p>
             </div>
-            <!-- should we use div or aside??? -->
             <aside class="col-md-5 aside">
-                <br>
-                <h2>Visualizations</h2>
-                <br>
+                <br />
+                <h2>
+                    Visualizations
+                </h2>
+                <br />
                 <div class="row">
                     <div class="col-sm-3 col-md-6">
-                        <!-- <br> -->
                         <a href="visualizations/temperature.html">
-                            <img src="assets/latitude_temperature.png" alt="latitude vs temperature" style="width:200px;height:auto" 
-                            class="img-fluid img-vis">
+                            <img class="img-fluid img-vis" style="width: 200px; height: auto;" src="assets/latitude_temperature.png" alt="latitude vs temperature" />
                         </a>
-                        <!-- <br> -->
                     </div>
-                    <!-- <br><br><br> -->
                     <div class="col-sm-3 col-md-6">
-                        <!-- <br> -->
                         <a href="visualizations/humidity.html">
-                            <img src="assets/latitude_humidity.png" alt="latitude vs humidity" style="width:200px;height:auto"
-                            class="img-fluid img-vis">
+                            <img class="img-fluid img-vis" style="width: 200px; height: auto;" src="assets/latitude_humidity.png" alt="latitude vs humidity" />
                         </a>
-                        <!-- <br> -->
                     </div>
-                    <!-- <br><br><br> -->
                     <div class="col-sm-3 col-md-6">
-                        <!-- <br> -->
                         <a href="visualizations/clouds.html">
-                            <img src="assets/latitude_cloudiness.png" alt="latitude vs cloudiness" style="width:200px;height:auto"
-                            class="img-fluid img-vis">
+                            <img class="img-fluid img-vis" style="width: 200px; height: auto;" src="assets/latitude_cloudiness.png" alt="latitude vs cloudiness" />
                         </a>
-                        <!-- <br> -->
                     </div>
-                    <!-- <br><br><br> -->
                     <div class="col-sm-3 col-md-6">
-                        <!-- <br> -->
                         <a href="visualizations/wind.html">
-                            <img src="assets/latitude_windspeed.png" alt="latitude vs windspeed" style="width:200px;height:auto"
-                            class="img-fluid img-vis">
+                            <img class="img-fluid img-vis" style="width: 200px; height: auto;" src="assets/latitude_windspeed.png" alt="latitude vs windspeed" />
                         </a>
-                        <!-- <br> -->
                     </div>
                 </div>
-            <aside>
+            </aside>
         </div>
     </div>
-
+    
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
