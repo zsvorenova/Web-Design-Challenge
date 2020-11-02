@@ -22,7 +22,7 @@ h1, h2, h3, h5, h6 {
 }
 
 .active, .navbar a:hover {
-    background-color: grey;
+    background-color:lightgrey;
     color: black;
     font-weight: bold;
 
@@ -41,7 +41,7 @@ h1, h2, h3, h5, h6 {
     padding: 5px, 5px, 5px, 5px;
 } */
 /* @media (max-width: 576px) {
-    .navbar.navbar-expand-md.navbar-light.bg-light {
+    .collapse.navbar-collapse {
       background-color: lightseagreen;
     }
   } */
