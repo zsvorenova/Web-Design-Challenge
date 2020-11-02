@@ -1,0 +1,47 @@
+h1, h2, h3, h5, h6 {
+    color: lightseagreen
+}
+
+.img-fluid {
+    padding: 5px 
+}
+
+.img-summary{
+    padding: 10px;
+}
+
+.navbar {
+    padding:0px
+}
+.navbar-brand {
+    background-color: lightseagreen;
+    font-size: xx-large;
+    font-weight: bold;
+    font-style: italic;
+    padding: 8px;
+}
+
+.active, .navbar a:hover {
+    background-color: grey;
+    color: black;
+    font-weight: bold;
+
+}
+
+.aside {
+    background-color: rgba(236, 233, 233, 0.568);
+}
+
+.img-vis:hover {
+    padding: 5px;
+    border: 2px solid lightseagreen;
+}
+
+/* div.col-sm-3.col-md-6 {
+    padding: 5px, 5px, 5px, 5px;
+} */
+/* @media (max-width: 576px) {
+    .navbar.navbar-expand-md.navbar-light.bg-light {
+      background-color: lightseagreen;
+    }
+  } */

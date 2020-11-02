@@ -9,7 +9,7 @@
     <!-- Bring in our bootstrap stylesheet -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="style.css">
 
     <title>Web-Design-Challenge</title>
 </head>
@@ -44,16 +44,18 @@
     </nav>
 
     <div class="container">
-        
+        <br>
+
         <div class="row">
             <div class="col-md-7">
                 <h1>Summary: Latitude vs. X</h1>
-                <img alt="latitude vs temperature" src="assets/latitude_temperature.png" class="img-fluid float-left"
+                <br>
+                <img alt="latitude vs temperature" src="assets/latitude_temperature.png" class="img-fluid float-left img-summary"
                 style="width:300px;height:auto;">
-               <row></row>
+               <br><br>
                 <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis,
                     we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.
-                </p>
+                </p><br>
                 <p>After assembling the dataset, we used Matplotlib to plot various aspects of weather vs. latitude.
                     Factors we looked at included: temperature, cloudiness, humidity, and wind speed. The site provides the source
                     data and visualizations created as part of the data analysis, as well as explanations and descriptions 
@@ -62,31 +64,44 @@
             </div>
             <!-- should we use div or aside??? -->
             <aside class="col-md-5 aside">
+                <br>
                 <h2>Visualizations</h2>
+                <br>
                 <div class="row">
                     <div class="col-sm-3 col-md-6">
+                        <!-- <br> -->
                         <a href="visualizations/temperature.html">
                             <img src="assets/latitude_temperature.png" alt="latitude vs temperature" style="width:200px;height:auto" 
-                            class="img-fluid float-left">
+                            class="img-fluid img-vis">
                         </a>
+                        <!-- <br> -->
                     </div>
+                    <!-- <br><br><br> -->
                     <div class="col-sm-3 col-md-6">
+                        <!-- <br> -->
                         <a href="visualizations/humidity.html">
                             <img src="assets/latitude_humidity.png" alt="latitude vs humidity" style="width:200px;height:auto"
-                            class="img-fluid float-right">
+                            class="img-fluid img-vis">
                         </a>
+                        <!-- <br> -->
                     </div>
+                    <!-- <br><br><br> -->
                     <div class="col-sm-3 col-md-6">
+                        <!-- <br> -->
                         <a href="visualizations/clouds.html">
                             <img src="assets/latitude_cloudiness.png" alt="latitude vs cloudiness" style="width:200px;height:auto"
-                            class="img-fluid float-left">
+                            class="img-fluid img-vis">
                         </a>
+                        <!-- <br> -->
                     </div>
+                    <!-- <br><br><br> -->
                     <div class="col-sm-3 col-md-6">
+                        <!-- <br> -->
                         <a href="visualizations/wind.html">
                             <img src="assets/latitude_windspeed.png" alt="latitude vs windspeed" style="width:200px;height:auto"
-                            class="img-fluid float-right">
+                            class="img-fluid img-vis">
                         </a>
+                        <!-- <br> -->
                     </div>
                 </div>
             <aside>
