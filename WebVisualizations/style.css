@@ -1,7 +1,9 @@
-h1, h2, h3, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
     color: lightseagreen
 }
-
+h4 {
+    text-align: center;
+}
 .img-fluid {
     padding: 5px 
 }
@@ -30,12 +32,21 @@ h1, h2, h3, h5, h6 {
 
 .aside {
     background-color: rgba(236, 233, 233, 0.568);
+    max-height: 420px;
 }
 
 .img-vis:hover {
     padding: 5px;
     border: 2px solid lightseagreen;
 }
+
+.img-thumbnail {
+    border-color: lightseagreen;
+}
+
+/* .col-md-5 {
+    max-height: 420px ;
+} */
 
 /* div.col-sm-3.col-md-6 {
     padding: 5px, 5px, 5px, 5px;
